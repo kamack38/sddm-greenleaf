@@ -23,7 +23,7 @@ Column {
         id: timeLabel
         anchors.horizontalCenter: parent.horizontalCenter
         font.pointSize: root.font.pointSize * 9
-        font.bold: true
+        font.weight: Font.ExtraBold
         color: root.palette.text
         renderType: Text.QtRendering
         function updateTime() {

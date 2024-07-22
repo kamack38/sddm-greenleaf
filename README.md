@@ -1,49 +1,60 @@
-# sddm-astronaut-theme
+# GreenLeaf login theme for SDDM
 
 A theme for the [SDDM login manager](https://github.com/sddm/sddm).
 
-- Screen resolution: 1080p
-- Font: Open sans
+- Background resolution: 1440p
+- Font: JetBrains Mono Nerd Font
 
 ### Preview
 
 You can easily change how it looks in **[config](./theme.conf)**. 
 Here are some examples:
 
-![Preview](./Previews/preview1.png)
-![Preview](./Previews/preview2.png)
-![Preview](./Previews/preview3.png)
-![Preview](./Previews/preview4.png)
+![Preview](./Previews/preview.png)
 
 ### Dependencies
 
-```sh
-qt6-5compat qt6-declarative qt6-svg sddm
-```
+- qt6-5compat
+- qt6-declarative
+- qt6-svg
+- sddm
+- JetBrains Mono Nerd Font
+
 > qt6-declarative replaces qt6-quickcontrols2
 > https://archlinux.org/packages/extra/x86_64/qt6-declarative/
 
+
 ### Install
 
-1. Clone this repository, copy fonts to `/usr/share/fonts/`:
+1. Clone this repository:
 
    ```sh
-   sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
-   sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+   sudo git clone https://github.com/kamack38/sddm-greenleaf-theme.git /usr/share/sddm/themes/greenleaf
    ```
 
 2. Then edit `/etc/sddm.conf`, so that it looks like this:
 
+    ```
+    [Theme]
+    Current=greenleaf
+    ```
+
+Or use the following command
+
     ```sh
     echo "[Theme]
-    Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
+    Current=greenleaf" | sudo tee /etc/sddm.conf
     ```
+
+### Additional information
+
+When editing the theme you can preview it with:
+
+```sh
+sddm-greeter-qt6 --test-mode --theme .
+```
 
 ### Credits
 
-Based on the theme [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by **MarianArlt**.
-
-### License
-
-Distributed under the **[GPLv3+](https://www.gnu.org/licenses/gpl-3.0.html) License**.    
-Copyright (C) 2022-2024 Keyitdev.
+Based on [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by [**MarianArlt**](https://github.com/MarianArlt) and [`Astronaut theme`](https://github.com/Keyitdev/sddm-astronaut-theme) by [**Keyitdev**](https://github.com/Keyitdev).
+The background is a cropped and resized version of **Prateek Gautam's** [`Green leaf photo on Unsplash`](https://unsplash.com/photos/green-leaf-Qizi-z1AJno).
