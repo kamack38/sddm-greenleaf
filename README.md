@@ -57,4 +57,5 @@ sddm-greeter-qt6 --test-mode --theme .
 ### Credits
 
 Based on [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by [**MarianArlt**](https://github.com/MarianArlt) and [`Astronaut theme`](https://github.com/Keyitdev/sddm-astronaut-theme) by [**Keyitdev**](https://github.com/Keyitdev).
+
 The background is a cropped and resized version of **Prateek Gautam's** [`Green leaf photo on Unsplash`](https://unsplash.com/photos/green-leaf-Qizi-z1AJno).
