@@ -7,9 +7,6 @@ A theme for the [SDDM login manager](https://github.com/sddm/sddm).
 
 ### Preview
 
-You can easily change how it looks in **[config](./theme.conf)**. 
-Here are some examples:
-
 ![Preview](./Previews/preview.png)
 
 ### Dependencies
@@ -41,10 +38,8 @@ Here are some examples:
 
 Or use the following command
 
-    ```sh
     echo "[Theme]
     Current=greenleaf" | sudo tee /etc/sddm.conf
-    ```
 
 ### Additional information
 
